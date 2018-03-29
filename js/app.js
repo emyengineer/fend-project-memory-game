@@ -211,17 +211,6 @@ const timer = document.querySelector('#timer');
 let x ;
 let startTimer = function (resolution) {
 
-/*
-	if we wanted to save the first very beginning date
-	let startDate = localStorage.getItem('startDate');
-	timer.textContent = startDate;
-	if(startDate === null) {
-		startDate = new Date();
-		localStorage.setItem ('startDate', startDate);
-	} else {
-		startDate = new Date(startDate);
-	}
-*/
    startDate = new Date();
    x =  setInterval(function () {
 		const convertToDays = 1000 * 60 * 60 * 24 ;
@@ -274,13 +263,6 @@ let reShuffle = function() {
 	timer.textContent = '0:0' ;
 	displayCards(cardsArray);
 }
-
-/*const starsRating = document.querySelector('.stars');
-starsRating.addEventListener('click', function (event) {
-	if(event.target.tagName === 'I') {
-		event.target.classList.toggle('fa-gold');
-	}
-});*/
 
 const starsElements = document.querySelectorAll('.fa-star');
 

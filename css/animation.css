@@ -1,0 +1,157 @@
+// Not Matched
+.style1 {
+      -webkit-animation:spin 2s linear ;
+      -moz-animation:spin 2s linear ;
+      animation:spin 2s linear ;
+
+}
+
+@-moz-keyframes spin { 30% { -moz-transform: rotate(70deg); } }
+@-webkit-keyframes spin { 30% { -webkit-transform: rotate(70deg); } }
+@keyframes spin { 30% { -webkit-transform: rotate(70deg);
+                         transform: rotatey(70deg);
+                          background-color: red;
+                       }
+                  70% {
+                         background-color: red;
+                         opacity: 0.3;
+                      }
+                  100% {
+                        background-color: red;
+                        opacity: 0.3;
+                      }
+                 }
+// Matched 
+.style2 {
+      -webkit-animation:spin2 2s linear ;
+      -moz-animation:spin2 2s linear ;
+      animation:spin2 2s linear ;
+
+}
+
+@-moz-keyframes spin2 { 30% { -moz-transform: rotate(70deg); } }
+@-webkit-keyframes spin2 { 30% { -webkit-transform: rotate(70deg); } }
+@keyframes spin2 { 30% { -webkit-transform: rotate(70deg);
+                         transform: rotatey(70deg);
+                          background-color:  #ADFF2F;
+                       }
+                  70% {
+                         background-color: #00FA9A;
+                         opacity: 0.3;
+                      }
+                  100% {
+                        background-color: #00FA9A;
+                        opacity: 0.3;
+                      }
+                 }
+
+@-moz-keyframes shake {
+    0%  {-webkit-transform : translate(6px,  6px); background-color: red; opacity: 0.1;}
+    10% {-webkit-transform : translate(-6px, -6px); background-color: red; opacity: 0.3;}
+    20% {-webkit-transform : translate(6px,  6px); background-color: red; opacity: 0.3;} 
+    30% {-webkit-transform : translate(-6px, -6px); background-color: red; opacity: 0.4;}
+    40% {-webkit-transform : translate(6px,   6px); background-color: red; opacity: 0.5;} 
+    50% {-webkit-transform : translate(-6px,  -6px); background-color: red; opacity: 0.6;}
+    60% {-webkit-transform : translate(6px, 6px); background-color: red; opacity: 0.7;} 
+    70% {-webkit-transform : translate(-6px, -6px); background-color: red; opacity: 0.8;}
+    80% {-webkit-transform : translate(6px, 6px); background-color: red; opacity: 0.9;} 
+    90% {-webkit-transform : translate(-6px, -6px); background-color: red; opacity: 0.95;}
+    100% {-webkit-transform : translate(6px, 6px); background-color: red; opacity: 0.99;}
+}
+@-webkit-keyframes shake {
+    0%  {-webkit-transform : translate(6px,  6px); background-color: red; opacity: 0.1;}
+    10% {-webkit-transform : translate(-6px, -6px); background-color: red; opacity: 0.3;}
+    20% {-webkit-transform : translate(6px,  6px); background-color: red; opacity: 0.3;} 
+    30% {-webkit-transform : translate(-6px, -6px); background-color: red; opacity: 0.4;}
+    40% {-webkit-transform : translate(6px,   6px); background-color: red; opacity: 0.5;} 
+    50% {-webkit-transform : translate(-6px,  -6px); background-color: red; opacity: 0.6;}
+    60% {-webkit-transform : translate(6px, 6px); background-color: red; opacity: 0.7;} 
+    70% {-webkit-transform : translate(-6px, -6px); background-color: red; opacity: 0.8;}
+    80% {-webkit-transform : translate(6px, 6px); background-color: red; opacity: 0.9;} 
+    90% {-webkit-transform : translate(-6px, -6px); background-color: red; opacity: 0.95;}
+    100% {-webkit-transform : translate(6px, 6px); background-color: red; opacity: 0.99;}
+}
+@keyframes shake
+{
+  0%  {-webkit-transform : translate(6px,  6px); background-color: red; opacity: 0.1;}
+  10% {-webkit-transform : translate(-6px, -6px); background-color: red; opacity: 0.3;}
+  20% {-webkit-transform : translate(6px,  6px); background-color: red; opacity: 0.3;} 
+  30% {-webkit-transform : translate(-6px, -6px); background-color: red; opacity: 0.4;}
+  40% {-webkit-transform : translate(6px,   6px); background-color: red; opacity: 0.5;} 
+  50% {-webkit-transform : translate(-6px,  -6px); background-color: red; opacity: 0.6;}
+  60% {-webkit-transform : translate(6px, 6px); background-color: red; opacity: 0.7;} 
+  70% {-webkit-transform : translate(-6px, -6px); background-color: red; opacity: 0.8;}
+  80% {-webkit-transform : translate(6px, 6px); background-color: red; opacity: 0.9;} 
+  90% {-webkit-transform : translate(-6px, -6px); background-color: red; opacity: 0.95;}
+  100% {-webkit-transform : translate(6px, 6px); background-color: red; opacity: 0.99;}
+}
+
+.vibrate {
+  -webkit-animation-name : shake;
+  -webkit-animation-duration : 0.8s;
+  -webkit-animation-iteration-count :1;
+}
+@-moz-keyframes  shake-mateched
+{
+  0%  {-webkit-transform : translate(6px,  6px); background-color: #ADFF2F; opacity: 0.1;}
+  10% {-webkit-transform : translate(-6px, -6px); background-color: #ADFF2F; opacity: 0.3;}
+  20% {-webkit-transform : translate(6px,  6px); background-color:  #ADFF2F; opacity: 0.3;} 
+  30% {-webkit-transform : translate(-6px, -6px); background-color:  #ADFF2F; opacity: 0.4;}
+  40% {-webkit-transform : translate(6px,  6px); background-color:  #ADFF2F; opacity: 0.5;} 
+  50% {-webkit-transform : translate(-6px, -6px); background-color: #00FA9A; opacity: 0.6;}
+  60% {-webkit-transform : translate(6px, 6px); background-color: #00FA9A; opacity: 0.7;} 
+  70% {-webkit-transform : translate(-6px, -6px); background-color: #00FA9A; opacity: 0.8;}
+  80% {-webkit-transform : translate(6px, 6px); background-color: #00FA9A; opacity: 0.9;} 
+  90% {-webkit-transform : translate(-6px, -6px); background-color: #00FA9A; opacity: 0.95;}
+  100%{-webkit-transform : translate(6px, 6px); background-color: #00FA9A; opacity: 0.99;}
+}
+@-webkit-keyframes  shake-mateched
+{
+  0%  {-webkit-transform : translate(6px,  6px); background-color: #ADFF2F; opacity: 0.1;}
+  10% {-webkit-transform : translate(-6px, -6px); background-color: #ADFF2F; opacity: 0.3;}
+  20% {-webkit-transform : translate(6px,  6px); background-color:  #ADFF2F; opacity: 0.3;} 
+  30% {-webkit-transform : translate(-6px, -6px); background-color:  #ADFF2F; opacity: 0.4;}
+  40% {-webkit-transform : translate(6px,  6px); background-color:  #ADFF2F; opacity: 0.5;} 
+  50% {-webkit-transform : translate(-6px, -6px); background-color: #00FA9A; opacity: 0.6;}
+  60% {-webkit-transform : translate(6px, 6px); background-color: #00FA9A; opacity: 0.7;} 
+  70% {-webkit-transform : translate(-6px, -6px); background-color: #00FA9A; opacity: 0.8;}
+  80% {-webkit-transform : translate(6px, 6px); background-color: #00FA9A; opacity: 0.9;} 
+  90% {-webkit-transform : translate(-6px, -6px); background-color: #00FA9A; opacity: 0.95;}
+  100%{-webkit-transform : translate(6px, 6px); background-color: #00FA9A; opacity: 0.99;}
+}
+@keyframes shake-mateched
+{
+  0%  {-webkit-transform : translate(6px,  6px); background-color: #ADFF2F; opacity: 0.1;}
+  10% {-webkit-transform : translate(-6px, -6px); background-color: #ADFF2F; opacity: 0.3;}
+  20% {-webkit-transform : translate(6px,  6px); background-color:  #ADFF2F; opacity: 0.3;} 
+  30% {-webkit-transform : translate(-6px, -6px); background-color:  #ADFF2F; opacity: 0.4;}
+  40% {-webkit-transform : translate(6px,  6px); background-color:  #ADFF2F; opacity: 0.5;} 
+  50% {-webkit-transform : translate(-6px, -6px); background-color: #00FA9A; opacity: 0.6;}
+  60% {-webkit-transform : translate(6px, 6px); background-color: #00FA9A; opacity: 0.7;} 
+  70% {-webkit-transform : translate(-6px, -6px); background-color: #00FA9A; opacity: 0.8;}
+  80% {-webkit-transform : translate(6px, 6px); background-color: #00FA9A; opacity: 0.9;} 
+  90% {-webkit-transform : translate(-6px, -6px); background-color: #00FA9A; opacity: 0.95;}
+  100%{-webkit-transform : translate(6px, 6px); background-color: #00FA9A; opacity: 0.99;}
+}
+
+.vibrate-match {
+  -webkit-animation-name : shake-mateched;
+  -webkit-animation-duration : 0.8s;
+  -webkit-animation-iteration-count :1;
+}
+
+
+.flip3d {
+          -webkit-animation-name : flip;
+          -webkit-animation-duration : 1s;
+          -webkit-animation-iteration-count :1;
+}
+
+@-webkit-keyframes flip
+{
+  20% {
+      -webkit-transform: rotateY(180deg); 
+      transform: rotateY(180deg);
+    }
+  
+}

@@ -2,11 +2,14 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Matching Game Edited By Eman Zaghloul FEND Developer</title>
     <meta name="description" content="">
     <link rel="stylesheet prefetch" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link rel="stylesheet prefetch" href="https://fonts.googleapis.com/css?family=Coda">
     <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    <link rel="stylesheet" type="text/css" href="css/animation.css">
 </head>
 <body>
 
@@ -17,13 +20,13 @@
 
         <section class="score-panel">
         	<ul class="stars">
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
-        		<li><i class="fa fa-star"></i></li>
+        		<li><i class="fa fa-star fa-gold"></i></li>
+        		<li><i class="fa fa-star fa-gold"></i></li>
+        		<li><i class="fa fa-star fa-gold"></i></li>
         	</ul>
-
-        	<span class="moves">3</span> Moves
-
+            
+        	<span class="moves">0</span> <span class="moves">Moves</span>
+            <span id="timer">0:0</span> 
             <div class="restart">
         		<i class="fa fa-repeat"></i>
         	</div>
@@ -78,7 +81,20 @@
             <li class="card">
                 <i class="fa fa-cube"></i>
             </li>
-        </ul>
+        </ul>       
+            <!-- The Modal -->
+            <div id="myModal" class="modal">
+               
+              <!-- Modal content -->
+              <div class="modal-content">
+                <span class="close">&times;</span>
+                <span><i class="fa fa-check-circle"></i> </span>
+                <p class="win">Congratualtions! You Won!</p>
+                <p class="score win"></p>
+                <button id="playAgain" class="playAgain">Play again!</button>
+
+            </div>
+            </div>
     </div>
 
     <script src="js/app.js"></script>

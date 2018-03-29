@@ -1,0 +1,127 @@
+@media screen and (max-width: 210px) {
+    .deck .card {
+            width: 20px;
+            height: 22px;
+            margin-bottom: 1px;
+    }
+    .deck {
+        width: 150px;
+        height: 150px;
+        min-height: 150px;
+    }
+    .deck .card.show {
+        font-size: 9vw;
+    }
+    .deck .card.match {
+        font-size: 9vw;
+    }
+    .moves {
+        font-size: 4vw;
+    }
+    .win{
+        font-size: 5vw;
+    }
+    .playAgain {
+        font-size: 5vw;
+    }
+}
+@media screen and (min-width: 211px) and (max-width: 414px) {
+     .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .deck .card {
+            width: calc((100% - 20px) / 4);
+            height: 90px;
+    }
+    .deck {
+        width: 100%;
+        min-height: 450px;
+    }
+     .deck .card.show {
+        font-size: 9vw;
+    }
+    .deck .card.match {
+        font-size: 9vw;
+    }
+    .moves {
+        font-size: 4vw;
+    }
+    .win{
+        font-size: 4vw;
+    }
+    .playAgain {
+        font-size: 5vw;
+    }
+}
+@media screen and (min-width: 415px) {
+   /* .container {
+        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+    }*/
+    .deck .card {
+            width: calc((100% - 50px) / 4);
+            height: 100px;
+    }
+    .deck {
+        width: 80%;
+        min-height: 550px;
+    }
+    .moves {
+        font-size: 3vw;
+    }
+   .playAgain {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 690px) {
+    .container {
+        width: 670px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .deck .card {
+            width: 125px;
+        }
+    .deck {
+        width: 660px;
+    }
+    .fa-star {
+        font-size: 4vw;
+    }
+    h1 {
+        font-size: 4vw;
+    }
+    .moves {
+        font-size: 2vw;
+    }
+    .playAgain {
+        font-size: 2vw;
+    }
+}
+
+@media screen and (min-width: 850px) {
+    .container {
+        width: 700px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .deck {
+        width: 660px;
+    }
+    .fa-star {
+        font-size: 3vw;
+    }
+     h1 {
+        font-size: 3vw;
+    }
+    .moves {
+    font-size: 2vw;
+    }
+    .playAgain {
+        font-size: 1vw;
+    }
+}

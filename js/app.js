@@ -173,15 +173,18 @@ let moveCounter = 0;
 let moves = document.querySelector('.moves');
 
 let cardClicked = function (event) {
-	
-	moves.textContent = moveCounter ++;
-	updateRatingStars();
+
 	console.log(event.target.tagName);
 	if(event.target.tagName === 'LI' ) {
 		// if hidden show it 
 		const currentCard = event.target;
-		if (currentCard.classList.contains('match') ) return ;
+		// Prevent moves counter increment if the card is opened and matched
+		if (currentCard.classList.contains('match')) return ;
+		// Prevent moves counter increment if card is opened and user clicks on the same card again
+		if (currentCard.classList.contains('open')) return;
 
+		moves.textContent = moveCounter ++;
+		updateRatingStars();
 		let visibleCls =['open', 'show'];
 		currentCard.classList.add(...visibleCls);
 		addCardToOpenedList(currentCard);
@@ -198,11 +201,6 @@ let updateRatingStars = function() {
 	} else if (moveCounter === 60) {
 		//Remove 2nd gold star
 		starsElements[1].classList.remove('fa-gold');
-		goldStarsNumber--;
-	}
-	else if (moveCounter > 80) {
-		// Remove third star 
-		starsElements[0].classList.remove('fa-gold');
 		goldStarsNumber--;
 	}
 }
@@ -224,7 +222,7 @@ let startTimer = function (resolution) {
 		const minutes = Math.floor((timeElapsed % convertToHours) / convertToMinutes );
 		const seconds = Math.floor((timeElapsed % convertToMinutes) /1000);
 
-	 timer.textContent = `${hours} : ${minutes} : ${seconds}` ;
+	 timer.textContent = ` ${minutes} : ${seconds}` ;
 	}, resolution);
 }	
 
@@ -282,7 +280,8 @@ let openModal = function() {
 
 	setTimeout(function() {
 		modal.style.display = "block";
-     	score.textContent = `With ${moveCounter} Moves and ${goldStarsNumber} Stars  Woooow! `;
+     	score.textContent = `With ${moveCounter} Moves, ${goldStarsNumber} Stars and
+     						 Time Taken(${timer.textContent.trim()})  Woooow! `;
 			}, 1000);	 
 }
 // When the user clicks on <span> (x), close the modal
